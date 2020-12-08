@@ -1,0 +1,24 @@
+<Page navigatingTo="onNavigatingTo">
+  
+    <ActionBar title="Character Detail">
+    </ActionBar>
+    <StackLayout>
+                        <FlexboxLayout flexDirection="column">
+
+            <Image src="{{image}}" style="height: 500px" />
+          <label text="{{'Name:  ' + name }}" col="1"/>
+          <label text="{{'Status:  ' + status }}" col="1"/>
+           <label text="{{'Species:  ' + species }}" col="1"/>
+          <label text="{{'Type:  '+type }}" col="1"/>
+          <label text="{{'Gender:  '+  gender }}" col="1"/>
+          <label text="{{'Origin:  ' + origin }}" col="1"/>
+          <label text="{{'Location:  ' + location }}" col="1"/>
+                  <Label
+          text="Episodes within that Character :"
+        />
+
+              <Label text="{{ episode}}" col="1"/>
+                    </FlexboxLayout>
+
+    </StackLayout>
+    </Page>

@@ -1,0 +1,22 @@
+<Page loaded="onLoaded">
+  
+    <ActionBar title="Home">
+    </ActionBar>
+    <ScrollView>
+        <StackLayout class="home-panel">
+            <!--Add your page content here-->
+            <ListView items="{{ item }}" itemTap="{{ onItemTap }}"
+                style="height:1250px">
+                <ListView.itemTemplate>
+                    <FlexboxLayout flexDirection="column">
+                        <Label text="{{'Episode Name:  '+ name }}"
+                             />
+                        <Label text="{{'Date:  '+ air_date }}"/>
+                               <Label text="{{'Episode:  '+ episode }}"/>
+                              <Label text="{{ url }}"/>
+                    </FlexboxLayout>
+                </ListView.itemTemplate>
+            </ListView>
+        </StackLayout>
+    </ScrollView>
+</Page>

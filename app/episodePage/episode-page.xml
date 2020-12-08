@@ -1,0 +1,20 @@
+<Page navigatingTo="onNavigatingTo">
+  
+    <ActionBar title="Episode Detail">
+    </ActionBar>
+    <StackLayout>                   
+                        <Label text="{{'Name:  '+ name  }}" />
+                        <Label text="{{'Date:  ' + air_date }}"/>
+                              <Label text="{{'Episode:  ' + episode }}"/>
+ <ListView items="{{ characters }}" itemTap="{{ onItemTap }}"
+                style="height:1250px">
+                <ListView.itemTemplate>
+                    <FlexboxLayout flexDirection="column">
+                        <Label text="{{ name }}"/>
+                        
+                    </FlexboxLayout>
+                </ListView.itemTemplate>
+            </ListView>
+
+    </StackLayout>
+    </Page>
